@@ -120,12 +120,7 @@ pipeline {
             //}
         //}
     }
-        stage('Slack it') {
-            steps {
-                slackSend channel: '#jenkins-pipeline-update', 
-                          message: 'Manchester City'
-            }
-        }
+
     post { 
         always { 
             cleanWs()
